@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wenebi's Event Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+</head>
+<body>
+    <div id="heading">
+        <h1>Event Registration Form</h1>
+    </div>
+    <form id="registrationForm">
+    <div class="row">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+    </div>
+    <div class="row">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"placeholder="abcdef@mail.com" required>
+    </div>
+    <div class="row">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="123456789" required>
+    </div>
+    <div class="row">
+        <label for="eventDate">Event Date:</label>
+        <input type="text" id="eventDate" name="eventDate" placeholder="mm/dd/yy" required>
+    </div>
+    <div class="row">
+        <label for="tickets" class="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" name="tickets" min="1" max="10" placeholder="1" required>
+    </div>
+     <div class="row"><button type="submit">Submit</button></div>
+    </form>
+    <div id="error-message"></div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
